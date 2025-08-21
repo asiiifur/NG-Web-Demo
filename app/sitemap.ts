@@ -3,25 +3,25 @@ import type { MetadataRoute } from "next"
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://ngibd.com",
+      url: "https://richman.com",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://ngibd.com/services",
+      url: "https://richman.com/services",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://ngibd.com/about",
+      url: "https://richman.com/about",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.6,
     },
     {
-      url: "https://ngibd.com/contact",
+      url: "https://richman.com/contact",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
