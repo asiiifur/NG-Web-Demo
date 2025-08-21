@@ -5,11 +5,11 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Richman - Leading Industrial Development & Business Solutions",
+  title: "Richman Multi-Shop - Premium Glass Products & Dry Fruits",
   description:
-    "Richman provides comprehensive industrial development, business consulting, and infrastructure solutions. Expert services in project management, industrial planning, and sustainable development.",
+    "Richman Multi-Shop offers premium glass products, fresh dry fruits, ceramics, and home decor. Quality products with phone-based ordering. Contact +880-2-XXXXXXX to place your order.",
   keywords:
-    "industrial development, business solutions, project management, infrastructure, consulting, sustainable development, Richman",
+    "glass products, dry fruits, ceramics, home decor, premium quality, Bangladesh, phone order, Richman multi-shop",
   authors: [{ name: "Richman Team" }],
   creator: "Richman",
   publisher: "Richman",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Richman - Leading Industrial Development & Business Solutions",
+    title: "Richman Multi-Shop - Premium Glass Products & Dry Fruits",
     description:
-      "Expert industrial development and business consulting services. Comprehensive solutions for sustainable growth and infrastructure development.",
+      "Premium glass products, fresh dry fruits, and more. Quality items with convenient phone-based ordering.",
     url: "https://richman.com",
     siteName: "Richman",
     images: [
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Richman - Leading Industrial Development & Business Solutions",
-    description: "Expert industrial development and business consulting services for sustainable growth.",
+    title: "Richman Multi-Shop - Premium Glass Products & Dry Fruits",
+    description: "Premium quality products with convenient phone-based ordering system.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -82,16 +82,35 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Richman",
-              description: "Leading industrial development and business solutions provider",
+              "@type": "Store",
+              name: "Richman Multi-Shop",
+              description: "Premium glass products, dry fruits, ceramics, and home decor with phone-based ordering",
               url: "https://richman.com",
-              logo: "https://richman.com/logo.png",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+1-555-0123",
-                contactType: "customer service",
-                availableLanguage: "English",
+              telephone: "+880-2-XXXXXXX",
+              priceRange: "৳500-৳5000",
+              paymentAccepted: "Cash, Mobile Banking",
+              currenciesAccepted: "BDT",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Richman Product Catalog",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Product",
+                      name: "Glass Products",
+                      category: "Home & Garden",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Product",
+                      name: "Dry Fruits",
+                      category: "Food & Beverages",
+                    },
+                  },
+                ],
               },
               address: {
                 "@type": "PostalAddress",
