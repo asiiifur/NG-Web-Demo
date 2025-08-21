@@ -8,9 +8,9 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({
-  title = "NGIBD - Leading Industrial Development & Business Solutions",
+  title = "Richman - Leading Industrial Development & Business Solutions",
   description = "Expert industrial development and business consulting services for sustainable growth and infrastructure development.",
-  canonical = "https://ngibd.com",
+  canonical = "https://richman.com",
   ogImage = "/og-image.png",
 }: SEOHeadProps) {
   return (
