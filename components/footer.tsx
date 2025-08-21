@@ -8,9 +8,9 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="flex h-8 w-8 items-center justify-center rounded bg-secondary text-secondary-foreground font-bold">
-                NGI
+                R
               </div>
-              <span className="font-bold text-xl">NGIBD</span>
+              <span className="font-bold text-xl">Richman</span>
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
               Leading Bangladesh's industrial development with world-class infrastructure and sustainable business
@@ -60,13 +60,13 @@ export function Footer() {
             <ul className="space-y-2 text-primary-foreground/80">
               <li>📍 Dhaka, Bangladesh</li>
               <li>📞 +880-2-XXXXXXX</li>
-              <li>✉️ info@ngibd.com</li>
+              <li>✉️ info@richman.com</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-primary-foreground/80">
-          <p>&copy; 2024 NGIBD. All rights reserved.</p>
+          <p>&copy; 2024 Richman. All rights reserved.</p>
         </div>
       </div>
     </footer>
