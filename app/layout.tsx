@@ -5,35 +5,35 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "NGIBD - Leading Industrial Development & Business Solutions",
+  title: "Richman - Leading Industrial Development & Business Solutions",
   description:
-    "NGIBD provides comprehensive industrial development, business consulting, and infrastructure solutions. Expert services in project management, industrial planning, and sustainable development.",
+    "Richman provides comprehensive industrial development, business consulting, and infrastructure solutions. Expert services in project management, industrial planning, and sustainable development.",
   keywords:
-    "industrial development, business solutions, project management, infrastructure, consulting, sustainable development, NGIBD",
-  authors: [{ name: "NGIBD Team" }],
-  creator: "NGIBD",
-  publisher: "NGIBD",
+    "industrial development, business solutions, project management, infrastructure, consulting, sustainable development, Richman",
+  authors: [{ name: "Richman Team" }],
+  creator: "Richman",
+  publisher: "Richman",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://ngibd.com"),
+  metadataBase: new URL("https://richman.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "NGIBD - Leading Industrial Development & Business Solutions",
+    title: "Richman - Leading Industrial Development & Business Solutions",
     description:
       "Expert industrial development and business consulting services. Comprehensive solutions for sustainable growth and infrastructure development.",
-    url: "https://ngibd.com",
-    siteName: "NGIBD",
+    url: "https://richman.com",
+    siteName: "Richman",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "NGIBD Industrial Development Solutions",
+        alt: "Richman Industrial Development Solutions",
       },
     ],
     locale: "en_US",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NGIBD - Leading Industrial Development & Business Solutions",
+    title: "Richman - Leading Industrial Development & Business Solutions",
     description: "Expert industrial development and business consulting services for sustainable growth.",
     images: ["/og-image.png"],
   },
@@ -59,7 +59,6 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -84,10 +83,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "NGIBD",
+              name: "Richman",
               description: "Leading industrial development and business solutions provider",
-              url: "https://ngibd.com",
-              logo: "https://ngibd.com/logo.png",
+              url: "https://richman.com",
+              logo: "https://richman.com/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+1-555-0123",
@@ -102,7 +101,7 @@ export default function RootLayout({
                 postalCode: "12345",
                 addressCountry: "US",
               },
-              sameAs: ["https://linkedin.com/company/ngibd", "https://twitter.com/ngibd"],
+              sameAs: ["https://linkedin.com/company/richman", "https://twitter.com/richman"],
               foundingDate: "2010",
               numberOfEmployees: "50-100",
               industry: "Industrial Development",
