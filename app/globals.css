@@ -1,44 +1,43 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match NGIBD professional design */
+  /* Updated color tokens for e-commerce design with warm amber palette */
   --background: #ffffff;
   --foreground: #374151;
-  --card: #f8fafc;
+  --card: #fefce8;
   --card-foreground: #374151;
   --popover: #ffffff;
   --popover-foreground: #374151;
-  --primary: #374151;
+  --primary: #d97706;
   --primary-foreground: #ffffff;
-  --secondary: #6366f1;
+  --secondary: #f59e0b;
   --secondary-foreground: #ffffff;
-  --muted: #f8fafc;
+  --muted: #f1f5f9;
   --muted-foreground: #6b7280;
-  --accent: #6366f1;
+  --accent: #f59e0b;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
   --border: #e5e7eb;
-  --input: #f8fafc;
-  --ring: rgba(99, 102, 241, 0.5);
-  --chart-1: #6366f1;
-  --chart-2: #d97706;
-  --chart-3: #15803d;
-  --chart-4: #d97706;
-  --chart-5: #374151;
+  --input: #fefce8;
+  --ring: rgba(217, 119, 6, 0.5);
+  --chart-1: #d97706;
+  --chart-2: #f59e0b;
+  --chart-3: #dc2626;
+  --chart-4: #1f2937;
+  --chart-5: #8b5cf6;
   --radius: 0.5rem;
-  --sidebar: #f8fafc;
+  --sidebar: #fefce8;
   --sidebar-foreground: #374151;
-  --sidebar-primary: #ffffff;
-  --sidebar-primary-foreground: #374151;
-  --sidebar-accent: #6366f1;
+  --sidebar-primary: #d97706;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f59e0b;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #e5e7eb;
-  --sidebar-ring: rgba(99, 102, 241, 0.5);
+  --sidebar-ring: rgba(217, 119, 6, 0.5);
 }
 
 .dark {
@@ -48,32 +47,32 @@
   --card-foreground: #f9fafb;
   --popover: #374151;
   --popover-foreground: #f9fafb;
-  --primary: #f9fafb;
+  --primary: #f59e0b;
   --primary-foreground: #1f2937;
-  --secondary: #6366f1;
+  --secondary: #d97706;
   --secondary-foreground: #ffffff;
   --muted: #4b5563;
   --muted-foreground: #9ca3af;
-  --accent: #6366f1;
-  --accent-foreground: #ffffff;
+  --accent: #f59e0b;
+  --accent-foreground: #1f2937;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
   --border: #4b5563;
   --input: #4b5563;
-  --ring: rgba(99, 102, 241, 0.5);
-  --chart-1: #6366f1;
+  --ring: rgba(245, 158, 11, 0.5);
+  --chart-1: #f59e0b;
   --chart-2: #d97706;
-  --chart-3: #15803d;
-  --chart-4: #d97706;
-  --chart-5: #f9fafb;
+  --chart-3: #dc2626;
+  --chart-4: #f9fafb;
+  --chart-5: #8b5cf6;
   --sidebar: #374151;
   --sidebar-foreground: #f9fafb;
-  --sidebar-primary: #6366f1;
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary: #f59e0b;
+  --sidebar-primary-foreground: #1f2937;
   --sidebar-accent: #4b5563;
   --sidebar-accent-foreground: #f9fafb;
   --sidebar-border: #4b5563;
-  --sidebar-ring: rgba(99, 102, 241, 0.5);
+  --sidebar-ring: rgba(245, 158, 11, 0.5);
 }
 
 @theme inline {
@@ -133,6 +132,14 @@
     animation: slideUp 0.8s ease-out forwards;
   }
 
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .animate-bounce-in {
+    animation: bounceIn 0.8s ease-out forwards;
+  }
+
   .animation-delay-200 {
     animation-delay: 0.2s;
   }
@@ -151,6 +158,28 @@
 
   .delay-300 {
     animation-delay: 0.3s;
+  }
+
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .product-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(217, 119, 6, 0.15);
   }
 }
 
@@ -173,6 +202,35 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
