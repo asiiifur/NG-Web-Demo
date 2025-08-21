@@ -4,18 +4,9 @@ import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 
 export function AboutSection() {
-  const [aboutImage, setAboutImage] = useState("/modern-industrial-facility.png")
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    // Check for updated images from ImageManager
-    const savedImages = localStorage.getItem("siteImages")
-    if (savedImages) {
-      const images = JSON.parse(savedImages)
-      const aboutImg = images.find((img: any) => img.id === "about-image")
-      if (aboutImg) setAboutImage(aboutImg.url)
-    }
-
     // Intersection observer for scroll animation
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -45,8 +36,9 @@ export function AboutSection() {
               Building Bangladesh's Industrial Future
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
-              NGIBD has been at the forefront of Bangladesh's industrial development for over two decades. We specialize
-              in creating world-class industrial parks that serve as catalysts for economic growth and job creation.
+              Richman has been at the forefront of Bangladesh's industrial development for over two decades. We
+              specialize in creating world-class industrial parks that serve as catalysts for economic growth and job
+              creation.
             </p>
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
               Our commitment to sustainable development and innovative business solutions has made us a trusted partner
@@ -67,8 +59,8 @@ export function AboutSection() {
           >
             <div className="relative group">
               <img
-                src={aboutImage || "/placeholder.svg"}
-                alt="NGIBD Industrial Facility"
+                src="/modern-industrial-facility.png"
+                alt="Richman Industrial Facility"
                 className="rounded-xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
