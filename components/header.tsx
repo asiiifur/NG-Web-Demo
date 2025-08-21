@@ -13,27 +13,24 @@ export function Header() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="#" className="text-sm font-medium hover:text-secondary transition-colors">
+          <Link href="#about" className="text-sm font-medium hover:text-secondary transition-colors">
             About
           </Link>
-          <Link href="#" className="text-sm font-medium hover:text-secondary transition-colors">
-            Legacy
+          <Link href="#products" className="text-sm font-medium hover:text-secondary transition-colors">
+            Products
           </Link>
-          <Link href="#" className="text-sm font-medium hover:text-secondary transition-colors">
-            Business
+          <Link href="#glass" className="text-sm font-medium hover:text-secondary transition-colors">
+            Glass Collection
           </Link>
-          <Link href="#" className="text-sm font-medium hover:text-secondary transition-colors">
-            News & Events
+          <Link href="#food" className="text-sm font-medium hover:text-secondary transition-colors">
+            Food Products
           </Link>
-          <Link href="#" className="text-sm font-medium hover:text-secondary transition-colors">
-            CSR
-          </Link>
-          <Link href="#" className="text-sm font-medium hover:text-secondary transition-colors">
-            Career
+          <Link href="#contact" className="text-sm font-medium hover:text-secondary transition-colors">
+            Contact
           </Link>
         </nav>
 
-        <Button className="bg-secondary hover:bg-secondary/90">Contact Us</Button>
+        <Button className="bg-secondary hover:bg-secondary/90">Call +880-2-XXXXXXX</Button>
       </div>
     </header>
   )
