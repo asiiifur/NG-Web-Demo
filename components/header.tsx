@@ -7,9 +7,9 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="flex h-8 w-8 items-center justify-center rounded bg-secondary text-secondary-foreground font-bold">
-            NGI
+            R
           </div>
-          <span className="font-bold text-lg">NGIBD</span>
+          <span className="font-bold text-lg">Richman</span>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
