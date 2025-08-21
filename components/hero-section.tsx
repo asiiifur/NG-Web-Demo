@@ -4,24 +4,31 @@ import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 
 export function HeroSection() {
-  const [heroImage, setHeroImage] = useState("/green-industrial-park-aerial.png")
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    // Check for updated images from ImageManager
-    const savedImages = localStorage.getItem("siteImages")
-    if (savedImages) {
-      const images = JSON.parse(savedImages)
-      const heroImg = images.find((img: any) => img.id === "hero-bg")
-      if (heroImg) setHeroImage(heroImg.url)
-    }
+    // Intersection observer for scroll animation
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.1 },
+    )
+
+    const section = document.getElementById("hero-section")
+    if (section) observer.observe(section)
+
+    return () => observer.disconnect()
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero-section" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out transform hover:scale-105"
         style={{
-          backgroundImage: `url('${heroImage}')`,
+          backgroundImage: `url('/green-industrial-park-aerial.png')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
