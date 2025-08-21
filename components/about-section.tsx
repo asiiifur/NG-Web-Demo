@@ -33,22 +33,23 @@ export function AboutSection() {
             }`}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Building Bangladesh's Industrial Future
+              Premium Glass & Gourmet Foods
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
-              Richman has been at the forefront of Bangladesh's industrial development for over two decades. We
-              specialize in creating world-class industrial parks that serve as catalysts for economic growth and job
-              creation.
+              Richman has been at the forefront of Bangladesh's glass and food industry for over two decades. We
+              specialize in crafting premium glass products and sourcing the finest food items that serve as the
+              foundation for elegant dining and gourmet experiences.
             </p>
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our commitment to sustainable development and innovative business solutions has made us a trusted partner
-              for both local and international companies looking to establish their presence in Bangladesh.
+              Our commitment to quality craftsmanship and premium food sourcing has made us a trusted partner for both
+              local and international customers looking for exceptional glass collections and gourmet food products in
+              Bangladesh.
             </p>
             <Button
               size="lg"
               className="bg-secondary hover:bg-secondary/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm md:text-base px-6 md:px-8"
             >
-              Learn About Our Legacy
+              Explore Our Collections
             </Button>
           </div>
 
@@ -59,8 +60,8 @@ export function AboutSection() {
           >
             <div className="relative group">
               <img
-                src="/modern-industrial-facility.png"
-                alt="Richman Industrial Facility"
+                src="/elegant-glass-vase-set.png"
+                alt="Richman Premium Glass Collection"
                 className="rounded-xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
